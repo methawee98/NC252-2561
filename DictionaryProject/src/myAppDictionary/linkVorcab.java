@@ -108,10 +108,10 @@ public class linkVorcab {
 			int hVal =key.charAt(0)-96;
 			for(int i = 1 ;i<key.length();i++) {
 				int letterVal =key.charAt(i)-96;
-				hVal = hVal*27+letterVal;
+				hVal =  (hVal*27+letterVal);
 			}
 			
-			return hVal%(arraySize+arraySize);
+			return (Math.abs(hVal))%(146529)%3;
 		}
 	  
 			

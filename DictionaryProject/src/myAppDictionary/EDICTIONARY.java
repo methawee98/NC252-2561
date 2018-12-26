@@ -30,7 +30,10 @@ import java.awt.Toolkit;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.SystemColor;
-
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 public class EDICTIONARY {
 
 	private JFrame frmEdictionary;
@@ -43,10 +46,18 @@ public class EDICTIONARY {
 	private JTextField textField_4;
 	/**
 	 * Launch the application.
+	 * @throws IOException 
 	 */
-	public static void main(String[] args) {
-		  test.insert("cat","animal","noun");
-		  test.insert("dog","animal cute","noun");
+	public static void main(String[] args) throws IOException {
+		  FileReader file = new FileReader("vocab.txt");
+		  BufferedReader Readf = new BufferedReader(file);
+		  String text ;
+		  while ((text = Readf.readLine()) != null) {
+			  String[] tokens = text.split("\t");
+			  test.insert(tokens[0],tokens[1],tokens[2]);
+		  }
+		  file.close();
+		
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {

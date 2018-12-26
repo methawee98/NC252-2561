@@ -1,0 +1,30 @@
+consider	deem to be	Verb
+minute	infinitely or immeasurably small	adjective
+accord	concurrence of opinion	Noun
+evident	clearly revealed to the mind or the senses or judgment	adjective
+practice	a customary way of operation or behavior	Noun
+intend	have in mind as a purpose	Verb
+concern	something that interests you because it is important	Noun
+commit	perform an act, usually with a negative connotation	Verb
+issue	some situation or event that is thought about	Noun
+approach	move towards	Verb
+establish	set up or found	Verb
+utter	without qualification	adjective
+conduct	direct the course of; manage or control	Verb
+engage	consume all of one's attention or time	Verb
+obtain	come into possession of	Verb
+scarce	deficient in quantity or number compared with the demand	adjective
+policy	a plan of action adopted by an individual or social group	Noun
+straight	successive, without a break	adjective
+stock	capital raised by a corporation through the issue of shares	Noun
+apparent	clearly revealed to the mind or the senses or judgment	adjective
+property	a basic or essential attribute shared by members of a class	Noun
+fancy	imagine; conceive of; see in one's mind	Verb
+concept	an abstract or general idea inferred or derived from specific instances	Noun
+court	an assembly (including one or more judges) to conduct judicial business	Noun
+appoint	assign a duty, responsibility, or obligation to	Verb
+passage	a section of text, particularly a section of medium length	Noun
+vain	unproductive of success	adjective
+instance	an occurrence of something	Noun
+coast	the shore of a sea or ocean	Noun
+project	a planned undertaking	Noun
