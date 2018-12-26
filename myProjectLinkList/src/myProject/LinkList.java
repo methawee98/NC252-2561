@@ -9,8 +9,8 @@ public class LinkList {
 		this.last = null;
 	}
 	
-	public void insertFirst(String ID,String name,String subject) {
-		StdLink newLink = new StdLink(ID,name,subject);
+	public void insertFirst(String ID,String name,String subject,String grade) {
+		StdLink newLink = new StdLink(ID,name,subject,grade);
 		newLink.next = this.first;
 	     if(newLink.next == null) last = newLink;
 	     else first.prev = newLink ;
@@ -18,13 +18,13 @@ public class LinkList {
 		first = newLink;
 		
 	}
-	public void insertAfter(String key,String ID,String name,String subject) {
+	public void insertAfter(String key,String ID,String name,String subject,String grade) {
 		StdLink current  = this.first;
 		while(!current.IDstd.equals(key)) {
 			if(current.next == null ) System.out.println("NO FOUND DATA TO INSERTAFTER");
 			else current = current.next;
 		}
-		StdLink newLink = new StdLink(ID,name,subject);
+		StdLink newLink = new StdLink(ID,name,subject,grade);
 		newLink.next = current.next;
 		current.next.prev = newLink;
 		newLink.prev = current;
@@ -32,8 +32,8 @@ public class LinkList {
 		System.out.println("Just Insert Studentdata ID :"+newLink.IDstd+"After ID :"+current.IDstd);
 	}
 	
-	public void insertLast(String ID,String name,String subject) {
-		StdLink newLink = new StdLink(ID,name,subject);
+	public void insertLast(String ID,String name,String subject,String grade) {
+		StdLink newLink = new StdLink(ID,name,subject,grade);
       newLink.next = last.next;
       newLink.prev = last;
       last.next = newLink;
@@ -64,7 +64,7 @@ public class LinkList {
 		}
 		if(current == this.first) {
 			this.first = first.next;
-			//this.last = last.prev;
+			first.prev = null;
 		}
 		else  {
 			System.out.println("Just Delete Studentdata ID :"+current.IDstd);
@@ -84,6 +84,81 @@ public class LinkList {
 			current = current.next;
 		}
 	}
+	
+    public StdLink updateName(String key,String name) {
+		
+		StdLink current  = this.first;
+		while(!current.IDstd.equals(key)) {
+			if(current.next == null ) return null;
+			else {
+				current = current.next;
+			}
+		}
+		current.nameStd = name;
+		return current;
+		
+	}
+    
+    public StdLink updateSubject(String key,String subject) {
+		
+		StdLink current  = this.first;
+		while(!current.IDstd.equals(key)) {
+			if(current.next == null ) return null;
+			else {
+				current = current.next;
+			}
+		}
+		current.subject = subject;
+		return current;
+		
+	}
+    
+   public StdLink updateGrade(String key,String grade ) {
+		
+		StdLink current  = this.first;
+		while(!current.IDstd.equals(key)) {
+			if(current.next == null ) return null;
+			else {
+				current = current.next;
+			}
+		}
+		current.grade = grade;
+		return current;
+		
+	}
+   
+   public StdLink updateId(String key,String id ) {
+		
+		StdLink current  = this.first;
+		while(!current.IDstd.equals(key)) {
+			if(current.next == null ) return null;
+			else {
+				current = current.next;
+			}
+		}
+		current.IDstd = id;
+		return current;
+		
+	}
+    public StdLink update(String key,StdLink dup ) {
+		
+		StdLink current  = this.first;
+		while(!current.IDstd.equals(key)) {
+			if(current.next == null ) return null;
+			else {
+				current = current.next;
+			}
+		}
+		current= dup;
+		return current;
+		
+	}
+  
+   
+    
+    
+	
+	
 
 	
 		
