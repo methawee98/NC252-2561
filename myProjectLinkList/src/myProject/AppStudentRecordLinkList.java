@@ -21,7 +21,7 @@ public class AppStudentRecordLinkList{
 		a.displayLink();}
 		else System.out.println("Link not Found");
 		
-		 StdRecord.delete("A000");
+		StdRecord.updateName("A000", "meetang podee");
 		StdRecord.displayList();
 		
 		

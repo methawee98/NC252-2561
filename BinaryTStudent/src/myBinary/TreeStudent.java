@@ -4,7 +4,6 @@ public class TreeStudent {
 	private NodeStD root;
 	 
 	TreeStudent(){
-		this.setRoot(null);
 	}
 	
 	public void insert(int idStd, String name, String subject,String grade)
@@ -81,10 +80,11 @@ public class TreeStudent {
 				isLeftChild = false;
 				current = current.rightChild;
 			}
-			if(current == null)
-				return false;
+			
 		}
 		
+		if(current == null)
+			return false;
 		if(current.leftChild==null && current.rightChild == null)
 		{
 			if(current == getRoot())
@@ -113,8 +113,10 @@ public class TreeStudent {
 		else
 		{
 			NodeStD successor = getSuccessor(current);
-			if(current == getRoot()) 
+			if(current == getRoot()) {
 				setRoot(successor);
+			    successor.leftChild = current.leftChild;  
+			}
 			else if(isLeftChild)
 			parent.leftChild = successor;
 			else {

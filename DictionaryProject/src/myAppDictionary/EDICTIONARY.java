@@ -40,7 +40,7 @@ public class EDICTIONARY {
 	private JTextField textField;
 	private JTextField txtMeaning;
 	private JTextField textField_3;
-	static linkVorcab test = new linkVorcab(100);
+	static linkVorcab test = new linkVorcab(30);
 	private JTextField textField_1;
 	private JTextField textField_2;
 	private JTextField textField_4;

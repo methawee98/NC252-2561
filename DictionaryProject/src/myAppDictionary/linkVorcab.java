@@ -111,7 +111,7 @@ public class linkVorcab {
 				hVal =  (hVal*27+letterVal);
 			}
 			
-			return (Math.abs(hVal))%(146529)%3;
+			return (Math.abs(hVal))%(arraySize);
 	   }
 			
 		

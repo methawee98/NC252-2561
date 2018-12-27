@@ -94,6 +94,7 @@ public class LinkList {
 				current = current.next;
 			}
 		}
+		System.out.println("JUST UPDATE :"+name+"FROM : "+current.nameStd);
 		current.nameStd = name;
 		return current;
 		
@@ -108,6 +109,7 @@ public class LinkList {
 				current = current.next;
 			}
 		}
+		System.out.println("JUST UPDATE :"+subject+" FROM : "+current.subject);
 		current.subject = subject;
 		return current;
 		
@@ -122,7 +124,9 @@ public class LinkList {
 				current = current.next;
 			}
 		}
+		System.out.println("JUST UPDATE :"+grade+" FROM : "+current.grade);
 		current.grade = grade;
+		
 		return current;
 		
 	}
@@ -136,33 +140,18 @@ public class LinkList {
 				current = current.next;
 			}
 		}
+		System.out.println("JUST UPDATE :"+id+" FROM : "+current.IDstd);
 		current.IDstd = id;
 		return current;
 		
 	}
-    public StdLink update(String key,StdLink dup ) {
-		
-		StdLink current  = this.first;
-		while(!current.IDstd.equals(key)) {
-			if(current.next == null ) return null;
-			else {
-				current = current.next;
-			}
-		}
-		current= dup;
-		return current;
+    
 		
 	}
   
    
     
-    
-	
-	
-
-	
-		
-	}
+   
 	
 
 
