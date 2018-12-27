@@ -35,15 +35,16 @@ import java.io.IOException;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 public class EDICTIONARY {
-
+	String[] text = new String[3];
 	private JFrame frmEdictionary;
 	private JTextField textField;
 	private JTextField txtMeaning;
 	private JTextField textField_3;
-	static linkVorcab test = new linkVorcab(30);
+	static linkVorcab test = new linkVorcab(100);
 	private JTextField textField_1;
 	private JTextField textField_2;
 	private JTextField textField_4;
+	private JButton btnSave;
 	/**
 	 * Launch the application.
 	 * @throws IOException 
@@ -99,7 +100,9 @@ public class EDICTIONARY {
 			public void actionPerformed(ActionEvent e) {
 				if(test.find(textField.getText())!=null) {
 					textField_3.setText(test.find(textField.getText()));
-	            
+					textField_1.setText("");
+					textField_2.setText("");
+					textField_4.setText("");
 				}
 				
 			}
@@ -132,7 +135,7 @@ public class EDICTIONARY {
 		textField_3.setEditable(false);
 		textField_3.setColumns(10);
 		textField_3.setBackground(SystemColor.info);
-		textField_3.setBounds(26, 201, 689, 124);
+		textField_3.setBounds(26, 246, 689, 107);
 		frmEdictionary.getContentPane().add(textField_3);
 		
 		JButton btnAdd = new JButton("ADD");
@@ -183,6 +186,41 @@ public class EDICTIONARY {
 		textField_4.setBackground(new Color(255, 255, 255));
 		textField_4.setBounds(376, 105, 339, 85);
 		frmEdictionary.getContentPane().add(textField_4);
+		
+		JButton button_1 = new JButton("EDIT");
+		button_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				if(textField.getText()!=null) {
+					textField_1.setText(test.getWord(textField.getText()));
+					textField_2.setText(test.getType(textField.getText()));
+					textField_4.setText(test.getMean(textField.getText()));
+					text[0]= test.getWord(textField.getText());
+					text[1]= test.getType(textField.getText());
+					text[2]= test.getMean(textField.getText());
+				}
+				else textField_3.setText("Edit fail");
+			}
+			
+		});
+		button_1.setForeground(new Color(255, 255, 240));
+		button_1.setBackground(new Color(152, 251, 152));
+		button_1.setBounds(55, 65, 89, 23);
+		frmEdictionary.getContentPane().add(button_1);
+		
+		btnSave = new JButton("SAVE");
+		btnSave.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			 test.update(textField.getText(), text[0], textField_1.getText());
+			 test.update(textField.getText(), text[1], textField_2.getText());
+			 test.update(textField.getText(), text[2], textField_4.getText());
+			 textField_3.setText("just UPDATE : "+test.find(textField_1.getText()));
+			}
+		});
+		btnSave.setForeground(new Color(255, 255, 240));
+		btnSave.setBackground(Color.PINK);
+		btnSave.setBounds(65, 152, 89, 23);
+		frmEdictionary.getContentPane().add(btnSave);
 		//frmEdictionary.setFocusTraversalPolicy(new FocusTraversalOnArray(new Component[]{frmEdictionary.getContentPane(), textField, lblPleaseEnterVocabulary, txtMeaning}));
 	}
 }

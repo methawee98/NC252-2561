@@ -112,8 +112,7 @@ public class linkVorcab {
 			}
 			
 			return (Math.abs(hVal))%(146529)%3;
-		}
-	  
+	   }
 			
 		
 	   

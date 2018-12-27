@@ -7,8 +7,36 @@ intend	have in mind as a purpose	Verb
 concern	something that interests you because it is important	Noun
 commit	perform an act, usually with a negative connotation	Verb
 issue	some situation or event that is thought about	Noun
-approach	move towards	Verb
-establish	set up or found	Verb
+commission	a special group delegated to consider some matter	Noun
+constant	a quantity that does not vary	Noun
+constitute	compose or represent	Verb
+level	a relative position or degree of value in a graded group	Noun
+affect	have an influence upon	Verb
+institute	set up or lay the groundwork for	Verb
+render	give an interpretation of	Verb
+appeal	be attractive to	Verb
+generate	bring into existence	Verb
+theory	a well-substantiated explanation of some aspect of the world	Noun
+range	a variety of different things or activities	Noun
+campaign	a race between candidates for elective office	Noun
+league	an association of sports teams that organizes matches	Noun
+labor	any piece of work that is undertaken or attempted	Noun
+confer	have a meeting in order to talk something over	Verb
+grant	allow to have	Verb
+dwell	think moodily or anxiously about something	Verb
+entertain	provide amusement fo	Verb
+contract	a binding agreement that is enforceable by law	Noun
+earnest	characterized by a firm, humorless belief in one's opinions	adjective
+yield	give or supply	Verb
+wander	move or cause to move in a sinuous or circular course	Verb
+insist	be emphatic or resolute and refuse to budge	Verb
+knight	a person of noble birth trained to arms and chivalry	Noun
+convince	make realize the truth or validity of something	Verb
+inspire	serve as the inciting cause of	Verb
+skill	an ability that has been acquired by training	Noun
+harry	annoy continually or chronically	Verb
+reflect	show an image of	Verb
+novel	an extended fictional work in prose	Noun
 utter	without qualification	adjective
 conduct	direct the course of; manage or control	Verb
 engage	consume all of one's attention or time	Verb
@@ -28,3 +56,33 @@ vain	unproductive of success	adjective
 instance	an occurrence of something	Noun
 coast	the shore of a sea or ocean	Noun
 project	a planned undertaking	Noun
+commission	a special group delegated to consider some matter	Noun
+constant	a quantity that does not vary	Noun
+constitute	compose or represent	Verb
+level	a relative position or degree of value in a graded group	Noun
+affect	have an influence upon	Verb
+institute	set up or lay the groundwork for	Verb
+render	give an interpretation of	Verb
+appeal	be attractive to	Verb
+generate	bring into existence	Verb
+theory	a well-substantiated explanation of some aspect of the world	Noun
+range	a variety of different things or activities	Noun
+campaign	a race between candidates for elective office	Noun
+league	an association of sports teams that organizes matches	Noun
+labor	any piece of work that is undertaken or attempted	Noun
+confer	have a meeting in order to talk something over	Verb
+grant	allow to have	Verb
+dwell	think moodily or anxiously about something	Verb
+entertain	provide amusement fo	Verb
+contract	a binding agreement that is enforceable by law	Noun
+earnest	characterized by a firm, humorless belief in one's opinions	adjective
+yield	give or supply	Verb
+wander	move or cause to move in a sinuous or circular course	Verb
+insist	be emphatic or resolute and refuse to budge	Verb
+knight	a person of noble birth trained to arms and chivalry	Noun
+convince	make realize the truth or validity of something	Verb
+inspire	serve as the inciting cause of	Verb
+skill	an ability that has been acquired by training	Noun
+harry	annoy continually or chronically	Verb
+reflect	show an image of	Verb
+novel	an extended fictional work in prose	Noun
